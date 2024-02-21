@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mynav"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="com.example.singleactivity.view.SplashScreen"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreen_to_transationFragment"
+            app:destination="@id/transationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transationFragment"
+        android:name="com.example.singleactivity.view.TransationFragment"
+        android:label="transactions_list"
+        tools:layout="@layout/transactions_list" >
+        <action
+            android:id="@+id/action_transationFragment_to_trans"
+            app:destination="@id/trans" />
+    </fragment>
+    <fragment
+        android:id="@+id/trans"
+        android:name="com.example.singleactivity.view.Trans"
+        android:label="fragment_trans"
+        tools:layout="@layout/fragment_trans" />
+</navigation>
