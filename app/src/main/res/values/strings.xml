@@ -4,4 +4,9 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="already">Already have an account?<a href="">Sign in</a></string>
+    <string name="politic">By ticking this box, you agree to our<a href="">Terms and conditions and private policy</a></string>
+    <string name="forgot"><a href="">Forgot Password?</a></string>
+    <string name="alreadyUP">Already have an account?<a href="">Sign up</a></string>
+    <string name="remeember">Remember password? Back to<a href="">Sign in</a></string>
 </resources>

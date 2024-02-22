@@ -2,10 +2,29 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="Item" />
     <item
-        android:id="@+id/app_bar_search"
-        android:icon="@drawable/ic_launcher_background"
-        android:title="Search"
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/home_gr"
+        android:title="Home"
+        android:enabled="true"
         app:actionViewClass="android.widget.SearchView" />
+    <item
+        android:id="@+id/trackFragment"
+        android:icon="@drawable/track_gr"
+        android:title="Track"
+        android:enabled="true"
+        app:actionViewClass="android.widget.SearchView" />
+    <item
+        android:id="@+id/walletFragment"
+        android:icon="@drawable/wallet_gr"
+        android:title="Wallet"
+        android:enabled="true"
+        app:actionViewClass="android.widget.SearchView" />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/profile_gr"
+        android:title="Profile"
+        android:enabled="true"
+        app:actionViewClass="android.widget.SearchView" />
+
 </menu>

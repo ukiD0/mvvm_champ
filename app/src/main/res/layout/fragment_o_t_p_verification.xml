@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.registration.OTPVerificationFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="40dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView2"
+            style="@style/h1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="110dp"
+            android:text="OTP Verification"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="8dp"
+            android:text="Enter the 6 digit numbers sent to your email"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatTextView2" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayoutCompat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="24dp"
+            android:paddingTop="33dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatTextView3">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/otp_sq"
+                android:layout_marginRight="30dp"/>
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/otp_sq"/>
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/otp_sq"/>
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/otp_sq"/>
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/otp_sq"/>
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/otp_sq"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="If you didn’t receive code, "
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signup"
+            style="@style/bt_next"
+            android:layout_width="342dp"
+            android:layout_height="46dp"
+            android:background="@drawable/button_selector"
+            android:text="Set New Password"
+            android:layout_marginTop="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatTextView6" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

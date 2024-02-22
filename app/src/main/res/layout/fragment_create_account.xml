@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.registration.CreateAccountFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="40dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView2"
+        style="@style/h1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="33dp"
+        android:text="Create an account"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Complete the sign up process to get started"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView2" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingTop="33dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView3">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/h2_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full name" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/main_text"
+            android:layout_width="342dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/inputtext_gr"
+            android:hint="Ivanov Ivan"
+            android:inputType="text"
+            android:textColorHint="@color/light_gray" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/h2_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/main_text"
+            android:layout_width="342dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/inputtext_gr"
+            android:hint="+7(999)999-99-99"
+            android:inputType="number"
+            android:textColorHint="@color/light_gray" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/h2_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Address" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/main_text"
+            android:layout_width="342dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/inputtext_gr"
+            android:hint="***********@mail.com"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/light_gray" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/h2_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/main_text"
+            android:layout_width="342dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/inputtext_gr"
+            android:drawableEnd="@drawable/eye_slash"
+            android:hint="**********"
+            android:inputType="textPassword"
+            android:textColorHint="@color/light_gray" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/h2_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/main_text"
+            android:layout_width="342dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/inputtext_gr"
+            android:drawableEnd="@drawable/eye_slash"
+            android:hint="**********"
+            android:inputType="numberPassword"
+            android:textColorHint="@color/light_gray" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            style="@style/text_gray"
+            android:layout_marginTop="35dp"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:button="@drawable/checkbox_bl"
+            android:text="@string/politic"
+            android:textAlignment="center"
+            android:textColorLink="@color/yellow" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signup"
+        style="@style/bt_next"
+        android:layout_width="342dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button_selector"
+        android:text="Sign Up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/already"
+        android:textColorLink="@color/pr_blue"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/signup"
+        app:layout_constraintStart_toStartOf="@+id/signup"
+        app:layout_constraintTop_toBottomOf="@+id/signup" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="or sign in using"
+        app:layout_constraintEnd_toEndOf="@+id/appCompatTextView4"
+        app:layout_constraintStart_toStartOf="@+id/appCompatTextView4"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView4" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/google"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/appCompatTextView5"
+        app:layout_constraintStart_toStartOf="@+id/appCompatTextView5"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

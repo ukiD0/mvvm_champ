@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.registration.LoginFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="40dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/appCompatTextView2"
+                style="@style/h1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="110dp"
+                android:text="Welcome Back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/appCompatTextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="8dp"
+                android:text="Fill in your email and password to continue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appCompatTextView2" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/linearLayoutCompat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="24dp"
+                android:paddingTop="33dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.488"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appCompatTextView3">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/h2_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email Address" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/main_text"
+                    android:layout_width="342dp"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/inputtext_gr"
+                    android:hint="***********@mail.com"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="@color/light_gray" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/h2_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/main_text"
+                    android:layout_width="342dp"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/inputtext_gr"
+                    android:drawableEnd="@drawable/eye_slash"
+                    android:hint="**********"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/light_gray" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/appCompatCheckBox"
+                style="@style/text_gray"
+                android:layout_marginTop="18dp"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:button="@drawable/checkbox_gr"
+                android:text="Remember password"
+                android:layout_marginLeft="24dp"
+                android:textAlignment="center"
+                android:textColorLink="@color/yellow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/forgot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forgot"
+                android:layout_marginRight="24dp"
+                android:textColorLink="@color/pr_blue"
+                app:layout_constraintBottom_toBottomOf="@+id/appCompatCheckBox"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/appCompatCheckBox" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/signup"
+                style="@style/bt_next"
+                android:layout_width="342dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="57dp"
+                android:background="@drawable/button_selector"
+                android:text="Log in"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appCompatCheckBox" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/appCompatTextView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alreadyUP"
+                android:textColorLink="@color/pr_blue"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="@+id/signup"
+                app:layout_constraintStart_toStartOf="@+id/signup"
+                app:layout_constraintTop_toBottomOf="@+id/signup" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/appCompatTextView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="or sign in using"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatTextView4"
+                app:layout_constraintStart_toStartOf="@+id/appCompatTextView4"
+                app:layout_constraintTop_toBottomOf="@+id/appCompatTextView4" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/google"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatTextView5"
+                app:layout_constraintStart_toStartOf="@+id/appCompatTextView5"
+                app:layout_constraintTop_toBottomOf="@+id/appCompatTextView5" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>

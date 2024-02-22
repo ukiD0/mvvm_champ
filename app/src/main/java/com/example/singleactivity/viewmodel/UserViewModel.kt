@@ -25,7 +25,7 @@ class UserViewModel :ViewModel() {
         db.getClient().auth.sessionStatus.collect{
             when(it){
                 is SessionStatus.Authenticated -> {
-                    _user.value = it.session.user
+                    _user.value = it.session.user!!
                 }
                 SessionStatus.LoadingFromStorage -> {
 
