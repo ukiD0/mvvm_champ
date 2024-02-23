@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.widget.doAfterTextChanged
+import androidx.core.widget.doOnTextChanged
 import androidx.navigation.Navigation
 import com.example.singleactivity.R
 import com.example.singleactivity.databinding.FragmentLoginBinding
@@ -15,7 +17,7 @@ class LoginFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentLoginBinding.inflate(inflater,container,false)
 
         binding.signup.setOnClickListener {
@@ -28,6 +30,13 @@ class LoginFragment : Fragment() {
 
         binding.appCompatTextView4.setOnClickListener {
             Navigation.findNavController(binding.root).navigate(R.id.action_loginFragment_to_createAccountFragment)
+        }
+
+        binding.password.doAfterTextChanged {
+            binding.signup.isEnabled = (binding.emailadd.text!!.length > 5
+                    && binding.emailadd.text!!.contains("@")
+                    && binding.emailadd.text!!.contains(".")
+                    && binding.password.text!!.length > 5)
         }
 
         return binding.root

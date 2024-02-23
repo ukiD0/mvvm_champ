@@ -37,38 +37,43 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingLeft="24dp"
             android:paddingTop="33dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/appCompatTextView3">
 
             <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/one"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:background="@drawable/otp_sq"
                 android:layout_marginRight="30dp"/>
             <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/two"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_marginRight="30dp"
                 android:background="@drawable/otp_sq"/>
             <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/three"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_marginRight="30dp"
                 android:background="@drawable/otp_sq"/>
             <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/four"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_marginRight="30dp"
                 android:background="@drawable/otp_sq"/>
             <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/five"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_marginRight="30dp"
                 android:background="@drawable/otp_sq"/>
             <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/six"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:background="@drawable/otp_sq"/>
@@ -93,6 +98,7 @@
             android:background="@drawable/button_selector"
             android:text="Set New Password"
             android:layout_marginTop="80dp"
+            android:enabled="false"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/appCompatTextView6" />

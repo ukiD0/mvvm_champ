@@ -50,6 +50,7 @@
             android:text="Full name" />
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fullname"
             style="@style/main_text"
             android:layout_width="342dp"
             android:layout_height="44dp"
@@ -66,6 +67,7 @@
             android:text="Phone Number" />
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pphonenumber"
             style="@style/main_text"
             android:layout_width="342dp"
             android:layout_height="44dp"
@@ -82,6 +84,7 @@
             android:text="Email Address" />
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailaddress"
             style="@style/main_text"
             android:layout_width="342dp"
             android:layout_height="44dp"
@@ -98,6 +101,7 @@
             android:text="Password" />
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
             style="@style/main_text"
             android:layout_width="342dp"
             android:layout_height="44dp"
@@ -115,6 +119,7 @@
             android:text="Confirm Password" />
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirm_password"
             style="@style/main_text"
             android:layout_width="342dp"
             android:layout_height="44dp"
@@ -122,10 +127,11 @@
             android:background="@drawable/inputtext_gr"
             android:drawableEnd="@drawable/eye_slash"
             android:hint="**********"
-            android:inputType="numberPassword"
+            android:inputType="textPassword"
             android:textColorHint="@color/light_gray" />
 
         <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkbox"
             style="@style/text_gray"
             android:layout_marginTop="35dp"
             android:layout_width="340dp"
@@ -144,6 +150,7 @@
         android:layout_marginTop="60dp"
         android:background="@drawable/button_selector"
         android:text="Sign Up"
+        android:enabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat" />

@@ -14,8 +14,19 @@ class CreateAccountFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentCreateAccountBinding.inflate(inflater,container,false)
+
+        binding.checkbox.setOnClickListener {
+            binding.signup.isEnabled = (binding.fullname.text!!.length > 5
+                    && binding.pphonenumber.text!!.length > 5
+                    && binding.emailaddress.text!!.length > 5
+                    && binding.emailaddress.text!!.contains("@")
+                    && binding.emailaddress.text!!.contains(".")
+                    && binding.password.text!!.trim().equals(binding.confirmPassword.text!!.trim())
+                    && binding.password.text!!.length > 4
+                    && binding.checkbox.isChecked)
+        }
 
         binding.signup.setOnClickListener {
             Navigation.findNavController(binding.root).navigate(R.id.action_createAccountFragment_to_homeFragment)
@@ -23,6 +34,8 @@ class CreateAccountFragment : Fragment() {
         binding.appCompatTextView4.setOnClickListener{
             Navigation.findNavController(binding.root).navigate(R.id.action_createAccountFragment_to_loginFragment)
         }
+
+
 
         return binding.root
     }
